@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Sanchez & Peña</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1 class="header-title">Sanchez & Peña - Consultores & Auditores SAS</h1>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <h2 class="about-subtitle">Sobre Nosotros</h2>
+        <div class="boxes-container">
+            <div class="about-box">
+                <h2 class="box-subtitle">Misión</h2>
+                <p class="about-p">Brindar asesoría integral en las áreas contable, financiera, tributaria, laboral y de
+                    seguridad social a pequeñas y medianas empresas, así como a personas naturales a nivel nacional. Nos
+                    enfocamos en ofrecer soluciones personalizadas, oportunas y éticas, apoyados en herramientas
+                    tecnológicas de vanguardia con conocimiento y estudio en la IA; estamos en constante actualización
+                    frente a los cambios normativos y tributarios del país, con el fin de impulsar el crecimiento y la
+                    formalización de nuestros clientes.</p>
+            </div>
+            <div class="divisory-line"> </div>
+            <div class="about-box">
+                <h2 class="box-subtitle">Visión</h2>
+                <p class="about-p">Ser reconocidos al año 2030 como la firma líder en servicios contables y jurídicos en
+                    Boyacá, destacándonos por nuestra excelencia profesional, atención cercana, y por integrar
+                    tecnología e innovación en nuestros procesos. Aspiramos a ser aliados estratégicos de pymes y
+                    emprendedores, facilitando su desarrollo sostenible mediante un acompañamiento técnico, ético;
+                    actualizados con las transformaciones del entorno legal y tributario colombiano.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="NIT-date">
+        <div class="NIT-content">
+            <h2>Consulte la Fecha límite para declarar</h2>
+            <h4>Ingrese los dos últimos digítos de su NIT</h4>
+            <input type="number" id="nitInput" maxlength="2" placeholder="Ej: 05">
+            <button id="consultButton">Consultar</button>
+            <h4 id="resultDate"> </h4>
+        </div>
+        <div class="NIT-image">
+            <img src="images/NITImage.jpeg" alt="img1">
+        </div>
+    </section>
+
+    <section class="separator">
+        <div class="separator-line"> </div>
+    </section>
+
+    <section class="document-section">
+        <h2 class="document-title">DOCUMENTOS REQUERIDOS PARA DECLARACION DE RENTA</h2>
+
+        <div class="carousel-container">
+            <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track">
+
+                    <div class="document-card">
+                        <div class="card-header">
+                            <span class="icon">🏠</span>
+                            <span class="header-text">DOCUMENTOS QUE SOPORTAN PROPIEDADES O ACTIVOS</span>
+                        </div>
+                        <ol class="document-list">
+                            <li>Certificado tributario bancos o Extractos bancarios año a declarar.</li>
+                            <li>Recibos del pago del impuesto predial. / y valor de compra por escrituras en caso de
+                                tener inmuebles. Facturas de mejoras realizadas.</li>
+                            <li>Recibo del pago del impuesto de vehículos y factura de la compra del vehículo.</li>
+                            <li>Certificado de inversiones CDT o informe de prestamos a familiares o amigos.</li>
+                            <li>Facturas de compra de computadores– muebles, propiedad raíz–vehículos etc.</li>
+                            <li>Certificado de saldo de cesantías</li>
+                            <li>Relación de prestamos a particulares/ahorros en fondos o cooperativas</li>
+                            <li>Cualquier documento o dato que represente un bien o un derecho.</li>
+                        </ol>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="card-header">
+                            <span class="icon">💳</span>
+                            <span class="header-text">DOCUMENTOS PARA SOPORTAR DEUDAS O PASIVOS</span>
+                        </div>
+                        <ul class="document-list">
+                            <li>Las deudas con bancos, corporaciones o fondos de empleados deben soportarse con el
+                                extracto o certificación bancaria.</li>
+                            <li>Si se trata de otros pasivos como deudas con particulares o familiares, es necesario
+                                conservar letras autenticadas o consignaciones. Es preciso tener documentos con fecha
+                                cierta (autenticada) u obligaciones notificadas
+                                judicialmente.</li>
+                        </ul>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="card-header">
+                            <span class="icon">💰</span>
+                            <span class="header-text">DOCUMENTOS PARA SOPORTAR INGRESOS</span>
+                        </div>
+                        <ol class="document-list">
+                            <li>Facturas o cuentas de cobro de honorarios y certificados de retención practicada a los
+                                mismos.</li>
+                            <li>En el caso de los asalariados, el certificado de ingresos y retenciones del año
+                                respectivo.</li>
+                            <li>Certificados tributarios de bancos para intereses en cuentas de ahorros o CDT.</li>
+                            <li>Informar venta de activos como propiedad raíz, vehículos o cualquier activo
+                                representativo.</li>
+                            <li>Soporte de herencias, indemnizaciones de seguros, loterías, etc.</li>
+                            <li>Cualquier otro documento que represente un ingreso durante el año a declarar.</li>
+                        </ol>
+                    </div>
+
+                    <div class="document-card">
+                        <div class="card-header">
+                            <span class="icon">📄</span>
+                            <span class="header-text">OTROS DOCUMENTOS</span>
+                        </div>
+                        <ul class="document-list">
+                            <li>Planilla de aportes a seguridad social.</li>
+                            <li>Certificado o prueba de aportes voluntarios a pension.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h5>Carrera 3 23 20 Bloque 2, Tunja, Boyaca 51</h5>
+            <h5>2025</h5>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

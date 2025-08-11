@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #840705;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.logo {
+    height: 100px;
+    padding-right: 30px;
+}
+
+.header-title {
+    font-size: 25px;
+    font-weight: 800;
+    color: #dcdbdb;
+}
+
+body {
+    background-color: #F7F6F6;
+}
+
+.about-us {
+    position: relative;
+    padding: 60px 100px;
+    overflow: hidden;
+    display: flex;
+}
+
+.about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/backgroundImage.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.boxes-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 60px;
+    max-width: 1080px;
+    width: 100%;
+    align-items: stretch;
+    margin-top: 90px;
+}
+
+.about-box {
+    flex: 1;
+    background-color: #840705;
+    opacity: 0.85;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.divisory-line {
+    width: 1.6px;
+    background-color: rgb(36, 36, 36);
+}
+
+@media (max-width: 768px) {
+    .boxes-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .divisory-line {
+        width: 100%;
+        height: 1.6px;
+    }
+}
+
+.about-subtitle {
+    color: #444444;
+    font-weight: 650;
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.box-subtitle {
+    color: #dcdbdb;
+    font-weight: 650;
+    margin: 10px;
+    z-index: 1;
+}
+
+.about-p {
+    color: rgb(222, 226, 230);
+}
+
+.NIT-date {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.NIT-content {
+    padding: 20px;
+    margin-left: 80px;
+    flex: 1 1 300px;
+    min-width: 250px;
+}
+
+.NIT-image {
+    flex: 0 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.NIT-date {
+    gap: 20px;
+}
+
+.NIT-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.NIT-content h2 {
+    font-weight: 650;
+    margin-bottom: 15px;
+    color: #444444;
+}
+
+.NIT-content h4 {
+    font-size: 18px;
+    margin: 18px 0;
+    color: #444444;
+}
+
+input[type="number"] {
+    width: 35%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+    border-color: #840705;
+    box-shadow: 0 0 5px #840705d3;
+}
+
+.NIT-content button {
+    background-color: #840705;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.NIT-content button:hover {
+    background-color: #c30b08d3;
+    transform: translateY(-2px);
+}
+
+.NIT-content button:active {
+    background-color: #003d80;
+    transform: scale(0.98);
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator div {
+    width: 80%;
+    height: 1px;
+    margin: 20px;
+    background-color: #bcbcbc;
+}
+
+.document-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.document-title {
+    font-size: 1.5rem;
+    color: #760922;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.arrow {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #760922;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+    color: #8B0000;
+}
+
+.document-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: solid 2px #8B0000;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #8B0000;
+    font-size: 1rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.header-text{
+    font-weight: 650;
+}
+
+.document-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.document-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 480px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.document-card {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .NIT-date {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .NIT-content,
+    .NIT-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .NIT-image {
+        justify-content: center;
+    }
+}
+
+footer {
+    background-color: #840705;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(222, 226, 230);
+    padding: 20px;
+}
+
+footer h5 {
+    text-align: center;
+}
