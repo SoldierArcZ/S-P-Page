@@ -330,3 +330,43 @@ footer {
 footer h5 {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .about-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-subtitle {
+        order: -1;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .boxes-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .NIT-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .NIT-content input[type="number"],
+    .NIT-content button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
